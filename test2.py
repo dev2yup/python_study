@@ -1,7 +1,8 @@
 score = int(input("점수 입력:"))
 if score>100 or score<0:
     print("""잘못된 점수입니다.
-프로그램을 종료합니다.""")
+프로그램을 종료.""")
+
 elif score>=90:
     print("A")
 elif score>=80:
@@ -9,6 +10,8 @@ elif score>=80:
 elif score>=70:
     print("C")
 elif score>=60:
+    print("D")
+elif score>=50:
     print("E")
 else:
     print("F")
