@@ -1,4 +1,5 @@
-index = 50
+total = int(input("전체 학생 수를 입력해 주세요."))
+index = total
 
 from random import *
 a = []
@@ -50,4 +51,16 @@ for n in grade:
     if n == "F":
         countF += 1
 
-print(countA, countB, countC, countD, countE, countF)
+print("A를 받은 사람: ", int(countA), "명", sep="")
+print("B를 받은 사람: ", int(countB), "명", sep="")
+print("C를 받은 사람: ", int(countC), "명", sep="")
+print("D를 받은 사람: ", int(countD), "명", sep="")
+print("E를 받은 사람: ", int(countE), "명", sep="")
+print("F를 받은 사람: ", int(countF), "명", sep="")
+
+print("A를 받은 사람 비율: " , int(countA/total*100) , "%", sep="")
+print("B를 받은 사람 비율: " , int(countB/total*100) , "%", sep="")
+print("C를 받은 사람 비율: " , int(countC/total*100) , "%", sep="")
+print("D를 받은 사람 비율: " , int(countD/total*100) , "%", sep="")
+print("E를 받은 사람 비율: " , int(countE/total*100) , "%", sep="")
+print("F를 받은 사람 비율: " , int(countF/total*100) , "%", sep="")
