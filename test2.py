@@ -1,4 +1,9 @@
-score = int(input("점수 입력:"))
+from random import *
+
+score = randint(0, 100)
+print(score)
+
+#score = int(input("점수 입력:"))
 if score>100 or score<0:
     print("""잘못된 점수입니다.
 프로그램을 종료.""")
