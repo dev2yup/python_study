@@ -1,5 +1,8 @@
 from random import *
 
+for i in range(100):
+    randint(0, 100)
+
 score = randint(0, 100)
 print(score)
 
