@@ -3,7 +3,9 @@ print("{0}은 {1}다 {2}".format(1, "바보", 5))
 print("%s는 %s다" % ("이상빈", "바보"))
 
 
-a = [1, 2, 2, 1, 1]
+from random import *
+a = input()
+
 b = 0
 c = 0
 for m in a:
@@ -14,4 +16,3 @@ for m in a:
 
 print(b)
 print(c)
-
