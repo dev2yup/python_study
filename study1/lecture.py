@@ -30,13 +30,25 @@
 # print("나는 %d살 입니다." % 20)
 # print("나는 %s를 좋아해요." % "파이썬") #%d 정수 %s 문자열 %c 한글자
 # print("나는 {}살 {} 입니다.".format(20, "이동엽"))
- 
- 
-from random import *
 
-a = str(randint(1, 10)) * 10
+# a = ["김", "이", "박"]
+# print(a.index("김")) #김은 몇번째인가(0부터 시작)
+# a.append("최"); print(a) #끝에 최 추가
+# a.insert(1, "정"); print(a) #1번에 정 추가
+# print(a.pop()) #끝에 있는 사람 뺌
+# print(a.count("김")) #김이 몇번 있는지
+# #리스트 확장 리스트1.extend(리스트2) 둘이 합쳐짐
 
-print(a)
+import matplotlib.pyplot as plt
+import numpy as np
 
+import matplotlib.pyplot as plt
+import numpy as np
 
+x = np.arange(3)
+years = ['2017', '2018', 'c']
+values = [100, 400, 900]
 
+plt.bar(x, values)
+plt.xticks(x, years)
+plt.show()

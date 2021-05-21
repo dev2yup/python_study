@@ -64,3 +64,15 @@ print("C를 받은 사람 비율: " , int(countC/total*100) , "%", sep="")
 print("D를 받은 사람 비율: " , int(countD/total*100) , "%", sep="")
 print("E를 받은 사람 비율: " , int(countE/total*100) , "%", sep="")
 print("F를 받은 사람 비율: " , int(countF/total*100) , "%", sep="")
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.arange(6)
+grade2 = ['A', 'B', 'C', 'D', 'E', 'F']
+values = [countA, countB, countC, countD, countE, countF]
+
+plt.bar(x, values, width = 0.5, color = "green")
+plt.xticks(x, grade2)
+plt.show()
+       
