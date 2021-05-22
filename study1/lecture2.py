@@ -50,7 +50,7 @@ x = np.arange(6)
 grade = ['A', 'B', 'C', 'D', 'E', 'F']
 values = [b.count("A"), b.count("B"), b.count("C"), b.count("D"), b.count("E"), b.count("F")]
 
-plt.bar(x, values)
+plt.bar(x, values, width = 0.5, color = "pink")
 plt.xticks(x, grade)
 plt.show()
        
