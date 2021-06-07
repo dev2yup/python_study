@@ -11,6 +11,7 @@ while index >= 1:
     if index == 0:
         print(a)
         print((len(a)))
+print(a)
 
 grade = []
 

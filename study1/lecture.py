@@ -31,7 +31,7 @@
 # print("나는 %s를 좋아해요." % "파이썬") #%d 정수 %s 문자열 %c 한글자
 # print("나는 {}살 {} 입니다.".format(20, "이동엽"))
 
-a = ["김", "이", "박"]
+# a = ["김", "이", "박"]
 # print(a.index("김")) #김은 몇번째인가(0부터 시작)
 # a.append("최"); print(a) #끝에 최 추가
 # a.insert(1, "정"); print(a) #1번에 정 추가
@@ -74,5 +74,9 @@ a = ["김", "이", "박"]
 # #세트에 추가 
 # python.add("이")#하나만 추가 가능
 # print(python)
-# python.remove("최") #세트에서 제거
+# pkython.remove("최") #세트에서 제거
 # print(python)
+
+a = int(input())
+
+print(-a)
