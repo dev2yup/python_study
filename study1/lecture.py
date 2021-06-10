@@ -77,6 +77,6 @@
 # pkython.remove("최") #세트에서 제거
 # print(python)
 
-a = int(input())
+# a, b = input().split(':') # :를 기준으로 나눔
 
-print(-a)
+

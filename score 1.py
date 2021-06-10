@@ -11,7 +11,6 @@ while index >= 1:
     if index == 0:
         print(a)
         print((len(a)))
-print(a)
 
 grade = []
 
@@ -69,9 +68,17 @@ print("F를 받은 사람 비율: " , int(countF/total*100) , "%", sep="")
 import matplotlib.pyplot as plt
 import numpy as np
 
+s1 = int(countA/total*100)
+s2 = int(countB/total*100)
+s3 = int(countC/total*100)
+s4 = int(countD/total*100)
+s5 = int(countE/total*100)
+s6 = int(countF/total*100)
+
+
 x = np.arange(6)
 grade2 = ['A', 'B', 'C', 'D', 'E', 'F']
-values = [countA, countB, countC, countD, countE, countF]
+values = [s1,s2,s3,s4,s5,s6]
 
 plt.bar(x, values, width = 0.5, color = "green")
 plt.xticks(x, grade2)
