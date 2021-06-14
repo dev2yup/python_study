@@ -2,10 +2,25 @@ user1 = input("사용자1의 이름을 입력하세요.")
 user2 = input("사용자2의 이름을 입력하세요.")
 print("끝말잇기 게임을 시작합니다. \n각각 2번의 기회를 갖습니다.")
 print("10초의 시간이 지나거나 답이 틀리면 하나의 기회를 잃습니다.")
-input_str1 = input("첫 단어를 입력하세요. ")
-last_str = input_str1[-1]
+print("기회를 먼저 모두 잃는 사람이 패배하고 게임이 종료됩니다.")
 count1 = 2
-count2 = 2 
+count2 = 2
+
+if True:
+    import time
+    start_time = time.time()
+    input_str1 = input("첫 단어를 입력하세요. ")
+    timer = 0    
+    timer= time.time() - start_time
+    if timer > 10:
+        print("시간 초과입니다.")
+        count1 -= 1
+        print("%s님의 기회는 %s번 남았습니다." %(user1, count1))    
+    elif len(input_str1) < 2:
+            reinput_str1 = input("두 글자 이상의 단어를 입력하세요. ")
+            input_str1 = reinput_str1
+            last_str = input_str1[-1]
+last_str = input_str1[-1]
 
 
 
@@ -48,6 +63,9 @@ while True:
         print("시간 초과입니다.")
         count1 -= 1
         print("%s님의 기회는 %s번 남았습니다." %(user1, count1))
+        if count1 == 0:
+            print(user2, "님이 승리하셨습니다.")
+            break
     
     elif input_str1[0] != last_str:
         count1 -= 1
