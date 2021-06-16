@@ -28,17 +28,21 @@ cider = 6
 while True:
   if drink == "콜라":
     money = int(input("돈을 넣어 주세요."))
+    
     if money == 1000:
       print("콜라 한 캔이 나왔습니다.")
       coke -= 1
       print("콜라는 %d캔 남았습니다." % coke)  
+    
     elif money > 1000:
       print("거스름돈 %d원 을 주고 콜라 한 캔을 줍니다."%(money - 1000))
       coke -= 1
       print("콜라는 %d캔 남았습니다." % coke)
+    
     elif money == 0:
       print("자판기 종료")
       break
+    
     elif money < 1000:
       print("%d원 을 돌려주고 콜라를 주지 않습니다."% money)
     
@@ -49,19 +53,24 @@ while True:
   
   if drink == "사이다":
     money = int(input("돈을 넣어 주세요."))
+    
     if money == 900:
       print("사이다 한 캔이 나왔습니다.")
       cider -= 1
       print("사이다는 %d캔 남았습니다." % cider)
+    
     elif money > 900:
       print("거스름돈 %d원 을 주고 사이다 한 캔을 줍니다."%(money - 900))
       cider -= 1
-      print("사이다는 %d캔 남았습니다." % cider)
-    elif money < 900:
-      print("%d원 을 돌려주고 사이다를 주지 않습니다."% money)
+      print("사이다는 %d캔 남았습니다." % cider) 
+    
     elif money == 0:
       print("자판기 종료")
       break
+    
+    elif money < 900:
+      print("%d원 을 돌려주고 사이다를 주지 않습니다."% money)
+    
     if cider == 0:
       print("사이다가 품절 되었습니다.")
       break
