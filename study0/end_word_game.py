@@ -14,11 +14,11 @@ if True:
 
     import time #시간 모듈(입력하기까지 지난 시간 기록)
     start_time = time.time()
-    input_str1 = input("첫 단어를 입력하세요.")
+    input_str1 = input("첫 단어를 입력하세요.") #첫 단어 입력
     timer = 0
     timer = time.time() - start_time
 
-    if timer > 10:
+    if timer > 10: #10초 초과 일 때 
         
         print("시간 초과입니다.")
         count1 -= 1
@@ -36,7 +36,7 @@ while True:
     import time 
     start_time = time.time()
     timer = 0
-    input_str2 = input("%s님, '%s' 로 시작하는 단어를 입력하세요. " %(user2, last_str))
+    input_str2 = input("%s님, '%s' 로 시작하는 단어를 입력하세요. " %(user2, last_str)) #사용자2 입력
     timer= time.time() - start_time
 
  
@@ -55,9 +55,9 @@ while True:
 
         if count2 == 0:
 
-            win1 += 1
+            win1 += 1 #승리 횟수 기록
             print(user1, "님이 승리 하셨습니다.")
-            print("%s 님이 %d번 승리하였고, %s 님이 %d번 승리하였습니다." %(user1, win1, user2, win2))
+            print("%s 님이 %d번 승리하였고, %s 님이 %d번 승리하였습니다." %(user1, win1, user2, win2)) #승리 횟수 출력
             count1 = 2
             count2 = 2
 

@@ -2,7 +2,7 @@
 # print(pow(4, 2)) #16 (제곱)
 # print(round(3.14)) # 3
 # print(round(4.6)) # 5
-
+# print(format(2.2/1.3, "0.4f")) #소수점 4째 자리까지
 # from math import *
 # print(floor(4.99)) #내림 4
 # print(ceil(3.14)) #올림 4
@@ -78,9 +78,3 @@
 # print(python)
 
 # a, b = input().split(':') # :를 기준으로 나눔
-
-a, b = input().split()
-c = bool(int(a))
-d = bool(int(b))
-
-print(c and d)
