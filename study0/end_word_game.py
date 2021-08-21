@@ -21,13 +21,14 @@ if True:
     if timer > 10: #10초 초과 일 때 
         
         print("시간 초과입니다.")
+        print(timer, "초")
         count1 -= 1
         print("%s님의 기회는 %d번 남았습니다." %(user1, count1))
  
     elif len(input_str1) < 2:
 
         input_str1 = input("2글자 이상의 단어를 입력해 주세요.")
-        last_str = input_str1[-1]
+        
 
 last_str = input_str1[-1]
 
@@ -133,7 +134,9 @@ while True:
         print(input_str1)
 
         if len(input_str1) < 2:
+            continue
 
             reinput_str1 = input("두 글자 이상의 단어를 입력하세요. ")
             input_str1 = reinput_str1
             last_str = input_str1[-1]
+            

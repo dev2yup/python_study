@@ -78,3 +78,12 @@
 # print(python)
 
 # a, b = input().split(':') # :를 기준으로 나눔
+
+from sympy import Limit, symbols
+from sympy import *
+x, h = symbols('x, h')    # Symbol 정의
+f_x = 3*x**3 - 5*x + exp(x) + (sin(x))**2    # f(x)를 설정
+f_xPlush = f_x.subs({x:x+h})    # f(x+h) 구하기
+meanRatioOfChange = (f_xPlush - f_x)/h    # 평균변화율 구하기
+f_primeX = Limit(meanRatioOfChange, h, 0).doit()    # 도함수 구하기
+print(f_primeX)
