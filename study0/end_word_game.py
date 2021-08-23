@@ -134,7 +134,6 @@ while True:
         print(input_str1)
 
         if len(input_str1) < 2:
-            continue
 
             reinput_str1 = input("두 글자 이상의 단어를 입력하세요. ")
             input_str1 = reinput_str1
